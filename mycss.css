@@ -1,0 +1,141 @@
+html {
+    background-color: #98FFCC; 
+    background-image: url(watercolor_22_by_SadMonkeyDesign_res.jpg);
+}
+
+/* Make a parallax scroll */
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}
+
+/* Have the photo appear on the left side of the screen */
+.photo { 
+    height: 1600px;
+    width: 1600px;
+    position: relative;
+    top: 200px;
+    left: -625px;
+    float: left;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+/*h1 {
+    font-family: 'Titillium Web', sans-serif;
+    color: OrangeRed;
+    width: 1em;
+    font-size: 40px;
+    letter-spacing: 40px; /* arbitrarily large letter-spacing for safety *//*
+    text-align-last: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 3em;
+    position: relative;
+    align-content: center;
+}*/
+
+/* Center both names on the page */
+.names { 
+    font-family: 'Titillium Web', sans-serif;
+    color: OrangeRed;
+    font-weight: bold;
+    width: 1em;
+    font-size: 40px;
+    letter-spacing: 40px;
+    position: relative;
+    align-content: center;
+    float: center;
+}
+
+.firstname {
+    top: 20px;
+    left: 725px;
+}
+
+/* Make the last name appear to the right and lower than the first name */
+.lastname { 
+    float: center;
+    top: -200px;
+    left: 800px;
+}
+
+ /* Have the text appear on the right side of the screen */
+.text {
+    width: 500px;
+    float: right;
+    right: -25px;
+    margin-top: -350px;
+    margin-bottom: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Make the links turn OrangeRed when the mouse hovers over them */
+a:hover {
+    color: OrangeRed; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0 0 50px 0;
+}
+
+#one, #two, #three, #four, #five {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 20px;
+    color: #000;
+}
+
+#one, #two, #three {
+    margin-bottom: 15px;
+    padding: 0 0 15px 0;
+}
+
+li {
+    padding: 2px 0 2px 0;
+}
+
+p {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    margin-right: 50px;
+    padding: 50px 0 50px 0;
+}
+
+#five {
+    border: none;
+    padding-top: 25px;
+}
+
+#six {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+}
